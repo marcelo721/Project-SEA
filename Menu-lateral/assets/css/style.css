@@ -11,31 +11,38 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #2d2d2d;
+    background: #e7e5e5;
 }
 
 .navigation{
-    position: relative;
-    height: 500px;
-    background: #424242;
-    width: 70px;
-    box-shadow: 10px 0 0 #099c22;
-    border-left: 10px solid #424242 ;
+    position: fixed; 
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background: #201b2c;
+    width: 110px;
+    box-shadow: 10px 0 0 #e7e5e5;
+    border-left: 10px solid #201b2c;
     overflow-x: hidden;
     transition: 0.5s;
 }
 
+.navigation ul li.active a .icon ion-icon,
+.navigation ul li.active a .title {
+    color: #201b2c;
+}
 .navigation:hover{
-    width: 300px;
+    width: 250px;
 }
 
 .navigation ul {
+    
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     padding-left: 5px;
-    padding-top: 40px;
+    padding-top: 110px;
 }
 
 .navigation ul li{
@@ -52,7 +59,7 @@ body{
     display: flex;
     width: 100%;
     text-decoration: none;
-    color: #fff;
+    color: #e7e5e5;
 }
 
 .navigation ul li a .icon{
@@ -66,22 +73,26 @@ body{
 }
 
 .navigation ul li a .icon ion-icon{
+
     position: relative;
+    padding-left: 50px;
     font-size: 1.5rem;
+    font-weight: 1000;
     z-index: 1;
 }
 
 .navigation ul li a .title{
     position: relative;
     display: block;
-    padding-left: 10px;
+    padding-left: 45px;
     height: 60px;
     line-height: 60px;
     white-space: nowrap;
+    font-weight: 600;
 }
 
 .navigation ul li.active{
-    background: #099c22;
+    background: #e7e5e5;
 }
 
 .navigation ul li.active a::before{
@@ -91,9 +102,10 @@ body{
     right: 0;
     width: 30px;
     height: 30px;
-    background: #424242;
+    background: #201b2c;
     border-radius: 50%;
-    box-shadow: 15px 15px 0 #099c22;
+    box-shadow: 15px 15px 0 #e7e5e5;
+    z-index: -1;
 }
 
 .navigation ul li.active a::after{
@@ -103,7 +115,15 @@ body{
     right: 0;
     width: 30px;
     height: 30px;
-    background: #424242;
+    background: #201b2c;
     border-radius: 50%;
-    box-shadow: 15px -15px 0 #099c22;
+    box-shadow: 15px -15px 0 #e7e5e5;
+}
+
+.logo{
+    position: absolute;
+    top: 0;
+    left: 45%;
+    transform: translateX(-50%);
+    z-index: 1; 
 }
