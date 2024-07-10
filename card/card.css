@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding: 0;
+
+}
+
+
+.card {
+    width: 281px;
+    height: 211px; 
+    border-radius: 24px 24px 24px 24px;
+    background: var(--Primary, #7D60C0);
+    box-shadow: 10px 10px 80px 0px #3F27661A;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.book-image {
+    width: 132px;
+    height: 132px;
+    flex-shrink: 0;
+}
+
+
+.disciplina {
+    display: flex;
+    width: 281px;
+    height: 64px;
+    padding: 8px 16px 16px 16px;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 24px 24px;
+    background: var(--Primary-Dark, #412C72);
+}
+
+.disciplina h1 {
+    
+    display: flex;
+    width: 249px;
+    height: 30px;
+    flex-direction: column;
+
+    justify-content: center;
+    position: absolute;
+    
+    color: var(--Text-contrast, #E1E1E1);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.btn-round {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px; 
+    height: 44px; 
+    border-radius: 24px; 
+    
+   
+    position: absolute; 
+    top: 32px; 
+    right: 16px;
+    z-index: 1; 
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(25px);
+}
+
+.icon svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    display: block; 
+    margin: auto; 
+}
+
+
+
+
